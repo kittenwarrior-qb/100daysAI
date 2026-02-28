@@ -1,7 +1,3 @@
-"""
-Script để predict comment mới
-"""
-
 import pickle
 
 # Load model đã train
@@ -11,7 +7,6 @@ with open('vectorizer.pkl', 'rb') as f:
     vectorizer = pickle.load(f)
 
 def predict_comment(text):
-    """Dự đoán sentiment của comment"""
     vec = vectorizer.transform([text])
     prediction = model.predict(vec)[0]
     probability = model.predict_proba(vec)[0]
@@ -25,7 +20,7 @@ def predict_comment(text):
 
 # Test
 if __name__ == "__main__":
-    print("🤖 Comment Filter - Nhập comment để phân tích\n")
+    print("Comment Filter - Nhập comment để phân tích\n")
     
     while True:
         comment = input("Nhập comment (hoặc 'quit' để thoát): ")
