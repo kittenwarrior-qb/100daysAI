@@ -1,6 +1,6 @@
-# Comment Filter - Sentiment Analysis
+# Comment Filter
 
-Dự án phân loại sentiment của comment (tích cực/tiêu cực) sử dụng Machine Learning.
+Dự án phân loại comment (tích cực/tiêu cực) sử dụng Machine Learning.
 
 ## Tổng quan
 
